@@ -534,10 +534,10 @@ section {
 }
 
 .certificate-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
 }
-
 .certificate-card {
     width: 400px;
     background: #fff;
