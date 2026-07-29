@@ -96,7 +96,7 @@ nav a {
 
 nav a:hover {
     background: rgba(255, 255, 255, 0.16);
-    color: #fff;
+    color: white;
 }
 
 /* Home / Hero */
@@ -352,6 +352,7 @@ nav a:hover {
 .hobby-card:hover,
 .certificate-card:hover {
     transform: translateY(-8px);
+    
 }
 
 /* Skills / Projects */
@@ -487,6 +488,14 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
+#languages li{
+    transition: 0.3s;
+}
+#languages li:hover{
+    background-color: #2563eb;
+    color: white;
+    transform: translateY(-8px)
+}
 
 /* Add better spacing in these sections */
 #achievements ul,
@@ -520,6 +529,12 @@ nav a:hover {
     display: flex;
     gap: 14px;
     flex-wrap: wrap;
+
+    
+}
+.footer-links{
+    justify-content: center;
+    margin-bottom: 35px;
 }
 
 /* Contact */
@@ -624,6 +639,12 @@ footer hr {
     #learning ul {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .footer-links{
+        justify-content: center;
+        margin-bottom: 35px;
+        /* gap: 30px; */
+
+    }
 }
 
 @media (max-width: 768px) {
@@ -682,6 +703,7 @@ footer hr {
     .project-btns,
     .footer-links {
         justify-content: center;
+        margin-bottom: 35px;
     }
 
     .about-info,
@@ -734,9 +756,15 @@ footer hr {
     }
 
     .hero-buttons,
-    .project-btns,
-    .footer-links {
+    .project-btns{
         flex-direction: column;
+        
+    }
+    .footer-links {
+        flex-direction: row;
+        justify-content: center;
+       
+        
     }
 
     .info-card,
