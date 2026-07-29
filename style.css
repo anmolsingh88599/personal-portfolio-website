@@ -157,7 +157,7 @@ nav a:hover {
     font-weight: 600;
 }
 
-.hero-text h1 {
+.hero-text strong {
     font-size: clamp(42px, 7vw, 68px);
     margin-bottom: 12px;
     color: #0f172a;
@@ -345,6 +345,8 @@ nav a:hover {
 
 .info-card:hover,
 .skill-card:hover,
+#learning li:hover,
+#languages li:hover,
 .project-card:hover,
 .timeline-content:hover,
 #experience article:hover,
@@ -491,11 +493,12 @@ nav a:hover {
 #languages li{
     transition: 0.3s;
 }
-#languages li:hover{
+/* #languages li:hover{
     background-color: #2563eb;
     color: white;
-    transform: translateY(-8px)
-}
+    transform: translateY(-10px)
+   
+} */
 
 /* Add better spacing in these sections */
 #achievements ul,
